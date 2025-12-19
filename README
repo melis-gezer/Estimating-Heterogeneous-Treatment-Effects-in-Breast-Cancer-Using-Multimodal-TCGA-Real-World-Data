@@ -1,0 +1,17 @@
+
+
+This repository contains an end-to-end research project focused on **Causal Machine Learning** in oncology. Using multimodal data from **The Cancer Genome Atlas (TCGA)**, the project estimates individualized treatment effects to pave the way for personalized therapeutic strategies.
+
+📄 **[The Full Project Report (PDF)](Estimating_Heterogeneous_Treatment_Effects_in_Breast_Cancer_Using_Multimodal_TCGA_Real_World_Data_Project_Report.pdf)** ---
+
+In clinical oncology, the Average Treatment Effect (ATE) often masks how different patient subgroups respond to therapy. This project implements state-of-the-art causal inference methods to identify which specific patient characteristics (clinical and genomic) drive treatment heterogeneity.
+
+* **Target:** Breast Cancer (TCGA-BRCA) dataset.
+* **Data:** Multimodal integration of clinical variables and high-dimensional RNA-seq gene expression.
+* **Methodology:** Implementation of **Causal Forests** (via GRF) and **Meta-learners** (S-, T-, and X-learners).
+* **Validation:** Propensity score overlap diagnostics, covariate balance checks, and policy value evaluation.
+
+
+## 📩 Contact
+**Melis Gezer** [LinkedIn](https://www.linkedin.com/in/melisgezer) | [Email](mailto:melisgezer17@gmail.com)  
+*M.S. in Mathematics
