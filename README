@@ -1,17 +1,28 @@
+# Estimating Heterogeneous Treatment Effects in Breast Cancer with Multimodal TCGA Data
+
+This repository contains an end-to-end research project on **causal machine learning** for oncology, focused on **heterogeneous treatment effects (hte)** using observational data. Using multimodal data from **tcga-brca**, the project estimates individualized treatment effects to support future personalized treatment strategies.
+
+Full project report (pdf):
+- `Estimating_Heterogeneous_Treatment_Effects_in_Breast_Cancer_Using_Multimodal_TCGA_Real_World_Data_Project_Report.pdf`
+
+Scope
+- Cancer type: breast cancer (tcga-brca)
+- Modalities: clinical covariates + high-dimensional rna-seq gene expression
+- Treatment setup: observational “treated vs untreated” framing (see report for operational definition)
+- Goal: estimate individual / conditional treatment effects and evaluate decision policies
+
+Methods
+- Propensity score modelling + overlap diagnostics
+- Covariate balance checks (smd / balance tables)
+- HTE modelling
+  - causal forests (grf-style)
+  - meta-learners (s-, t-, x- learners)
+
+Data Provenance & Ethics (TCGA / GDC)
+This project uses data from the cancer genome atlas (tcga) program accessed via the **nci genomic data commons (gdc)**.
+- Source: tcga-brca data retrieved from the gdc data portal / gdc api.
+- Patient privacy: tcga data are de-identified; this repository does **not** distribute controlled-access data.
+
+This repository is for research and educational purposes only. It is **not** a clinical decision tool and must not be used to guide patient care.
 
 
-This repository contains an end-to-end research project focused on **Causal Machine Learning** in oncology. Using multimodal data from **The Cancer Genome Atlas (TCGA)**, the project estimates individualized treatment effects to pave the way for personalized therapeutic strategies.
-
-📄 **[The Full Project Report (PDF)](Estimating_Heterogeneous_Treatment_Effects_in_Breast_Cancer_Using_Multimodal_TCGA_Real_World_Data_Project_Report.pdf)** ---
-
-In clinical oncology, the Average Treatment Effect (ATE) often masks how different patient subgroups respond to therapy. This project implements state-of-the-art causal inference methods to identify which specific patient characteristics (clinical and genomic) drive treatment heterogeneity.
-
-* **Target:** Breast Cancer (TCGA-BRCA) dataset.
-* **Data:** Multimodal integration of clinical variables and high-dimensional RNA-seq gene expression.
-* **Methodology:** Implementation of **Causal Forests** (via GRF) and **Meta-learners** (S-, T-, and X-learners).
-* **Validation:** Propensity score overlap diagnostics, covariate balance checks, and policy value evaluation.
-
-
-## 📩 Contact
-**Melis Gezer** [LinkedIn](https://www.linkedin.com/in/melisgezer) | [Email](mailto:melisgezer17@gmail.com)  
-*M.S. in Mathematics
